@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Réservation d'hôtel</title>
+</head>
+<body>
+  <main>
+  <p>les champs * sont obligatoires</p>
+  <form action="#">
+    <fieldset>
+      <legend>Informations personnelles :</legend>
+      
+      <div>
+        <label aria-required="true" for="nom">Nom *</label>
+       <input type="text" name="nom" id="nom" required>
+      </div>
+      <div>
+        <label aria-required="true" for="email">Email *</label>
+        <input type="email" name="email" id="email" required placeholder="@gmail.com">
+      </div>
+      <fieldset>
+        <legend>Téléphpne:</legend>
+          <div>
+            <label for="portable">Portable: </label>
+           <input type="tel" name="portable" id="portable">
+          </div>
+          <div>
+            <label for="fix">Téléphpne fix: </label>
+            <input type="tel" name="fix" id="fix">
+          </div>
+      </fieldset>
+      <h2>Informations de réservation :</h2>
+      <label  aria-required="true" for="date-arrivée"> Date d'arrivée *</label>
+      <input   type="date" name="date-arrivée" id="date-arrivée" required>
+      <label  aria-required="true" for="date-départ">Date de départ *</label>
+      <input type="date" name="date-départ" id="date-départ" required>
+      <label  aria-required="true" for="nmb-personnes"> Nombre de personnes *</label>
+      <input type="number" name="nmb-personnes" id="nmb-personnes" required>
+     </fieldset>
+   </form>
+  </main>
+</body>
+</html>
